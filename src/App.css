@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Verdana, Arial, sans-serif;
+  color: #d6d9ff;
+  background-color: #172b50;
+  background-image: radial-gradient(#42577e 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+main {
+  max-width: 760px;
+  margin: auto;
+  padding: 22px;
+  background: #202d4b;
+  border: 4px ridge #45618c;
+  box-shadow: 8px 8px 0 #0a1530;
+}
+
+.cabecalho {
+  margin: -22px -22px 20px;
+  padding: 20px 10px;
+  text-align: center;
+  color: #fff36b;
+  background: linear-gradient(#29298f, #08082f);
+  border-bottom: 4px ridge #7777cc;
+}
+
+.cabecalho h1 {
+  margin: 5px 0;
+  font-family: 'VT323', monospace;
+  font-size: 48px;
+  text-shadow: 3px 3px #ff00aa;
+}
+
+.estrelinhas {
+  margin: 0;
+  color: #ff99e6;
+  letter-spacing: 8px;
+}
+
+.subtitulo {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #e0e4ff;
+}
+
+.aviso {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff9bdf;
+  background: #40203f;
+  border: 2px dashed #d94ca8;
+}
+
+.painel {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #292440;
+  border: 2px ridge #665a91;
+}
+
+.painel h2 {
+  margin-top: 0;
+  padding-bottom: 8px;
+  font-family: 'VT323', monospace;
+  font-size: 28px;
+  color: #e4a0ff;
+  border-bottom: 1px dashed #8c63b8;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #e0ddff;
+}
+
+form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+  color: #f0eaff;
+  background: #171b31;
+  border: 2px inset #555875;
+}
+
+button {
+  padding: 9px 13px;
+  margin: 3px;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #e4e7ff;
+  background: linear-gradient(#424f76, #252f50);
+  border: 2px outset #6879a5;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: #d42b91;
+  border-color: #ff85d2;
+}
+
+button:active {
+  border-style: inset;
+}
+
+.estatisticas {
+  display: flex;
+  gap: 10px;
+}
+
+.estatistica {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 5px;
+  background: #38334a;
+  border: 2px outset #75627d;
+}
+
+.estatistica span {
+  font-family: 'VT323', monospace;
+  font-size: 38px;
+  color: #ff52c1;
+}
+
+.estatistica small {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: #e2d8ef;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.filtros button.ativo {
+  color: white;
+  background: #6939a8;
+  border: 2px inset #a58be8;
+}
+
+.vazio {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa6c9;
+  background: #191b30;
+  border: 1px dashed #8c63b8;
+}
+
+.lista {
+  padding: 10px 10px 10px 30px;
+  background: #191b30;
+  border: 2px inset #565477;
+}
+
+.lista li {
+  padding: 12px 8px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+  background: #29243e;
+  border: 1px solid #625581;
+}
+
+.tarefa-label {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 100%;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e1ddf5;
+}
+
+.tarefa-label input {
+  margin-top: 3px;
+  accent-color: #ff00aa;
+  cursor: pointer;
+}
+
+.lista li.concluida {
+  background: #203d36;
+  border-color: #548c70;
+}
+
+.lista li.concluida .tarefa-label span {
+  color: #9cbaa9;
+  text-decoration: line-through;
+}
+
+.remover {
+  display: block;
+  margin: 10px 0 0;
+  color: #ff8db7;
+}
+
+.limpar {
+  margin-top: 5px;
+  color: #ff9bdf;
+  background: #40203f;
+  border-color: #b64c91;
+}
+
+footer {
+  padding: 15px 5px 0;
+  text-align: center;
+  font-size: 11px;
+  color: #aaa9d0;
+  border-top: 2px dashed #565477;
+}
+
+footer p {
+  margin: 8px 0;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 14px 8px;
+  }
+
+  main {
+    padding: 14px;
+  }
+
+  .cabecalho {
+    margin: -14px -14px 18px;
+  }
+
+  .cabecalho h1 {
+    font-size: 38px;
+  }
+
+  .estatisticas {
+    gap: 5px;
+  }
+
+  .estatistica small {
+    font-size: 10px;
+  }
+
+  .painel {
+    padding: 10px;
+  }
+}
